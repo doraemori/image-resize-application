@@ -1,3 +1,7 @@
+__English__ · [日本語](readme_ja.md)
+
+---
+
 # image-resize-application
 Image Resize Application
 
@@ -25,8 +29,8 @@ This PHP script provides on-demand image resizing functionality. You can specify
 
 2. **Place the Files**:
    - Upload the PHP script to your web server
-   - Create the source image directory (default is `image/`)
-   - Create the cache directory (default is `cache/`) and ensure it has write permissions:
+   - Create the source image directory (default is `image/`) in the same directory as the PHP script
+   - Create the cache directory (default is `cache/`) in the same directory as the PHP script and ensure it has write permissions:
      ```
      mkdir cache
      chmod 755 cache
@@ -55,11 +59,13 @@ example.com/ira.php?path=sample.jpg&w=800&h=600&q=90
 - **h**: Desired height in pixels
 - **q**: JPEG quality (0-100, default: 90)
 
+※ If both'w'and'h'are omitted, the original image size will be served.
+
 ## Configuration Options
 The following settings can be configured at the beginning of the script:
 ```php
 <?php
-$imagesDir = 'img/';         // Directory containing source images
+$imagesDir = 'image/';         // Directory containing source images
 $cacheDir = 'cache/';         // Directory for storing cached resized images
 $defaultQuality = 90;         // Default quality setting
 $allowedTypes = ['jpg', 'jpeg', 'png', 'gif']; // Allowed image formats
