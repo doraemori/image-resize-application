@@ -1,4 +1,4 @@
-[English](readme.md) · __日本語__
+[English](README.md) · __日本語__
 
 ---
 
