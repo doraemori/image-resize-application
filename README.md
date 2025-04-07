@@ -42,7 +42,7 @@ This PHP script provides on-demand image resizing functionality. You can specify
 
 4. **Set Up URL Rewriting** (optional):
    - Create or edit `.htaccess` file in your web root directory
-   - Add the rewrite rules shown in the "URL Rewriting" section below
+   - Add the rewrite rules shown in the "an extra" section below
    - Make sure Apache's `mod_rewrite` module is enabled
 
 5. **Testing**:
