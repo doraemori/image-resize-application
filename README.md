@@ -1,4 +1,4 @@
-__English__ · [日本語](REANDME_ja.md)
+__English__ · [日本語](README_ja.md)
 
 ---
 
